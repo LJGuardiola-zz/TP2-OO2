@@ -1,4 +1,4 @@
-package idoneo;
+package refactor;
 
 import java.util.Objects;
 
@@ -10,7 +10,7 @@ public abstract class Libro {
         this.nombre = nombre;
     }
 
-    public abstract double getCosto(int diasAlquilados);
+    public abstract double obtenerCosto(int diasAlquilados);
 
     public int getPuntos(int diasAlquilados) {
         return 1;
@@ -18,8 +18,12 @@ public abstract class Libro {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Libro libro = (Libro) o;
         return nombre.equals(libro.nombre);
     }

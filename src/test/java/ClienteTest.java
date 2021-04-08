@@ -1,8 +1,8 @@
-import idoneo.Cliente;
-import idoneo.Libro;
-import idoneo.LibroRegular;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import refactor.Cliente;
+import refactor.Libro;
+import refactor.LibroRegular;
 
 public class ClienteTest {
 
@@ -17,7 +17,7 @@ public class ClienteTest {
         cliente.alquilar(elTunel, 5);
         cliente.alquilar(antesDelFin, 3);
 
-        Assertions.assertArrayEquals(new Object[] {10.0,2}, cliente.calcularDeudaYPuntosObtenidos());
+        Assertions.assertArrayEquals(new Object[]{10.0, 2}, cliente.calcularDeudaYPuntosObtenidos());
 
     }
 

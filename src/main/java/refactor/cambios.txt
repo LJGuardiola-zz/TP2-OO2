@@ -1,0 +1,9 @@
+1. Libro: elimine las constantes, la hice abstracta y extendí para poder hacer uso del polimorfismo y asi calcular el costo
+y el puntaje obtenido dependiendo de los dias que se quiera alquilar. También agregué un equals para poder distinguir entre libros.
+
+2. CopiaLibro: la elimine por que me parecía redundante.
+
+3. Alquiler: moví esta clase dentro de la clase Cliente ya que tienen alta cohesion y así gano encapsulamiento.
+Aplicando la técnica "Tell Don't Ask" remplace los getters por métodos que me retornan el costo y los puntos obtenidos de ese mismo alquiler.
+
+4. Cliente: modifique el método para obtener la deuda y el puntaje haciendo uso del polimorfismo.

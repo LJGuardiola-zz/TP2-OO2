@@ -1,7 +1,6 @@
-package idoneo;
+package refactor;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Cliente {
@@ -25,7 +24,7 @@ public class Cliente {
             deuda += alquiler.calcularCosto();
             puntos += alquiler.calcularPuntosObtenidos();
         }
-        return new Object[] {deuda, puntos};
+        return new Object[]{deuda, puntos};
     }
 
     private static class Alquiler {
@@ -39,7 +38,7 @@ public class Cliente {
         }
 
         private double calcularCosto() {
-            return libro.getCosto(diasAlquilados);
+            return libro.obtenerCosto(diasAlquilados);
         }
 
         private int calcularPuntosObtenidos() {

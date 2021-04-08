@@ -1,4 +1,4 @@
-package idoneo;
+package refactor;
 
 public class LibroRegular extends Libro {
 
@@ -7,10 +7,11 @@ public class LibroRegular extends Libro {
     }
 
     @Override
-    public double getCosto(int diasAlquilados) {
+    public double obtenerCosto(int diasAlquilados) {
         double costo = 2;
-        if (diasAlquilados > 2)
+        if (diasAlquilados > 2) {
             costo += (diasAlquilados - 2) * 1.5;
+        }
         return costo;
     }
 
